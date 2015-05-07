@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css.css" type="text/css">
+<script type="text/javascript" src="main.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/lightbox-2.6.min.js"></script>
+<link href="css/lightbox.css" rel="stylesheet" />
+<link rel="stylesheet" href="lightbox.css" type="text/css" media="screen" />
+<script src="js/prototype.js" type="text/javascript"></script>
+<script src="js/scriptaculous.js?load=effects,builder" type="text/javascript"></script>
+<title>Dominic Noble Portfolio</title>
+<style>
+ table, th, td
+ {
+ border-collapse:collapse;
+ }
+ th, td
+ {
+ padding:15px;
+ }
+</style>
+<link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+</head>
+<header>
+	<div id="HeadingContainer" class="HeadingGradient"> <!--Header Buttons-->
+		<div id="ButtonContainer">
+			<li style="list-style-type:none; cursor: pointer; cursor: hand; width:0px;">
+				<a href="index.html"> 
+				<div class="Button">
+				<div style="margin-top:7px;"> Home </div>
+				</div>
+				</a>
+			</li>
+			<li style="list-style-type:none; cursor: pointer; cursor: hand; width:0px;">
+				<a href="games.html"> 
+				<div class="Button" style="margin-top:-50px; margin-left:150px;"> 
+				<div style="margin-top:7px;"> Games </div>
+				</div>
+				</a>
+			</li>
+			<li style="list-style-type:none; cursor: pointer; cursor: hand; width:0px;">
+				<a href="art.html"> 
+				<div class="Button" style="margin-top:-50px; margin-left:300px;"> 
+				<div style="margin-top:7px;"> Art </div>
+				</div>
+				</a>
+			</li>
+			<li style="list-style-type:none; cursor: pointer; cursor: hand; width:0px;">
+				<a href="about.html"> 
+				<div class="Button" style="margin-top:-50px; margin-left:450px;">
+				<div style="margin-top:7px;"> About </div>
+				</div>
+				</a>
+			</li>
+			<li style="list-style-type:none; cursor: pointer; cursor: hand; width:0px;">
+				<a href="contact.html"> 
+				<div class="Button" style="margin-top:-50px; margin-left:600px;">
+				<div style="margin-top:7px;"> Contact </div>
+				</div>
+				</a>
+			</li>
+		</div>
+	</div>
+		
+	<div id="TopImageContainer" class="css-carousel"> <!--Contains the background graphic-->
+		<img class="css-img" src="images/topimage1.jpg" />
+		<img class="css-img" src="images/topimage2.jpg" />
+		<img class="css-img" src="images/topimage3.jpg" />
+		<img class="css-img" src="images/topimage1.jpg" />
+		<img class="css-img" src="images/topimage2.jpg" />
+		<img class="css-img" src="images/topimage3.jpg" />
+	</div>
+		
+</header>
+
+<body>
+	<div id="BodyContainer" class="RoundEdges Shadow"> <!--Main content box-->
+		<div id="Heading" class="GradientSide RoundTopEdges">
+			Contact Me
+			<div id="SubHeading"></div>
+		</div>
+		
+		<div id="GridContainer" style="font-family:Calibri; font-size:20px;">
+			To contact me, please enter your e-mail address and message in the forms below:
+			<form action="send_mail.php" method="post">
+			<table>
+			<tr>
+			<td>Email Address:</td>
+			<td>
+			<input type="text" name="email_address" value="" maxlength="100" />
+			</td>
+			</tr>
+			<tr>
+			<td>Message:</td>
+			<td>
+			<textarea rows="10" cols="50" name="comments"></textarea>
+			</td>
+			</tr>
+			<tr><td>&nbsp;</td>
+			<td>
+			<input type="submit" value="Submit" />
+			</td>
+			</tr>
+			</table>
+			</form>
+		</div>
+	</div>
+</body>
+
+<footer>
+
+</footer>
+
+
+	
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css.css" type="text/css">
+<script type="text/javascript" src="main.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/lightbox-2.6.min.js"></script>
+<link href="css/lightbox.css" rel="stylesheet" />
+<link rel="stylesheet" href="lightbox.css" type="text/css" media="screen" />
+<script src="js/prototype.js" type="text/javascript"></script>
+<script src="js/scriptaculous.js?load=effects,builder" type="text/javascript"></script>
+<title>Dominic Noble Portfolio</title>
+<style>
+ table, th, td
+ {
+ border-collapse:collapse;
+ }
+ th, td
+ {
+ padding:15px;
+ }
+</style>
+<link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+</head>
+<header>
+	<div id="HeadingContainer" class="HeadingGradient"> <!--Header Buttons-->
+		<div id="ButtonContainer">
+			<li style="list-style-type:none; cursor: pointer; cursor: hand; width:0px;">
+				<a href="index.html"> 
+				<div class="Button">
+				<div style="margin-top:7px;"> Home </div>
+				</div>
+				</a>
+			</li>
+			<li style="list-style-type:none; cursor: pointer; cursor: hand; width:0px;">
+				<a href="games.html"> 
+				<div class="Button" style="margin-top:-50px; margin-left:150px;"> 
+				<div style="margin-top:7px;"> Games </div>
+				</div>
+				</a>
+			</li>
+			<li style="list-style-type:none; cursor: pointer; cursor: hand; width:0px;">
+				<a href="art.html"> 
+				<div class="Button" style="margin-top:-50px; margin-left:300px;"> 
+				<div style="margin-top:7px;"> Art </div>
+				</div>
+				</a>
+			</li>
+			<li style="list-style-type:none; cursor: pointer; cursor: hand; width:0px;">
+				<a href="about.html"> 
+				<div class="Button" style="margin-top:-50px; margin-left:450px;">
+				<div style="margin-top:7px;"> About </div>
+				</div>
+				</a>
+			</li>
+			<li style="list-style-type:none; cursor: pointer; cursor: hand; width:0px;">
+				<a href="contact.html"> 
+				<div class="Button" style="margin-top:-50px; margin-left:600px;">
+				<div style="margin-top:7px;"> Contact </div>
+				</div>
+				</a>
+			</li>
+		</div>
+	</div>
+		
+	<div id="TopImageContainer" class="css-carousel"> <!--Contains the background graphic-->
+		<img class="css-img" src="images/topimage1.jpg" />
+		<img class="css-img" src="images/topimage2.jpg" />
+		<img class="css-img" src="images/topimage3.jpg" />
+		<img class="css-img" src="images/topimage1.jpg" />
+		<img class="css-img" src="images/topimage2.jpg" />
+		<img class="css-img" src="images/topimage3.jpg" />
+	</div>
+</header>
+
+<body onload="Timer()">
+
+	<div id="BodyContainer" class="RoundEdges Shadow"> <!--Main content box-->
+		<div id="Heading" class="GradientSide RoundTopEdges">
+			Dominic Noble
+			<div id="SubHeading">2D Arist : 3D Artist : Animator</div>
+		</div>
+		
+		<div id="GridContainer">
+				<table style="height:30px;">
+					<tr style="height:260px">
+						<td> <a href="#" onclick="popup('popUpDiv6')"><img src="images/games/KojoGame.jpg" class="RoundEdges" alt="Goop"></a></td>
+						<td> <a href="#" onclick="popup('popUpDiv')"><img src="images/art/LarthurX.jpg" class="RoundEdges" alt="Larthur X"></a></td>
+						<td> <a href="#" onclick="popup('popUpDiv5')"><img src="images/games/AtlantisGame.jpg" class="RoundEdges" alt="Kojo's Adventure"></a></td>
+					<tr style="height:260px">
+						<td> <a href="#" onclick="popup('popUpDiv4')"><img src="images/art/Italy.jpg" class="RoundEdges" alt="UDK Italy"></a></td>
+						<td> <a href="#" onclick="popup('popUpDiv3')"><img src="images/art/Tavern.jpg" class="RoundEdges" alt="Steampunk Tavern"></a></td>
+						<td> <a href="#" onclick="popup('popUpDiv2')"><img src="images/art/Goop.jpg" class="RoundEdges" alt="Goop"></a></td>
+					</tr>
+				</table>
+		</div>
+	</div>
+</body>
+
+<footer>
+	<div id="blanket" style="display:none;"></div>
+	<div id="popUpDiv" style="display:none;"> <!--LarthurX-->
+		<a href="#" onclick="popup('popUpDiv')">
+			<div id="Heading" class="GradientSide RoundTopEdges">
+				<div style="position:absolute; left:50px;"><img src="images/close2.png" /></div>Dissertation - Larthur X
+				<div id="SubHeading">Rigged and animated mesh</div>
+			</div>
+		</a>
+		<br>
+		<div style="margin-left:14px;">
+			<div style="margin-left:0px; margin-bottom:10px;">	
+				<iframe width="870" height="489"
+					src="http://www.youtube.com/embed/CARszuTP29s">
+					<p>Your browser does not support iframes.</p>
+				</iframe>
+
+			</div>
+		</div>
+
+		<div class="GameDescription">
+			For my 3rd Year Dissertation module I modelled, textured, rigged and animated a 3D character. The model was created and animated in Autodesk 3DS Max, alongside Photoshop CS5 for texturing.
+			<br>
+			<br>
+			To view the learning/creation process for the rig, visit 'www.dominicnobledissertation.blogspot.com'.
+		</div>	
+	</div>
+
+<footer>
+	<div id="blanket" style="display:none;"></div>
+	<div id="popUpDiv2" style="display:none;"> <!--Goop-->
+		<a href="#" onclick="popup('popUpDiv2')">
+			<div id="Heading" class="GradientSide RoundTopEdges">
+				<div style="position:absolute; left:50px;"><img src="images/close2.png" /></div>Goop
+				<div id="SubHeading">Short animated sequence</div>
+			</div>
+		</a>
+		<br>
+		<div style="margin-left:30px;">
+			<div style="margin-left:0px; margin-bottom:10px;">	
+				<iframe style="margin-left:-25px;" height="500" width="890" src="goop.html"  frameborder="0" seamless>
+					<p>Your browser does not support iframes.</p>
+				</iframe>
+
+			</div>
+		</div>
+
+		<div class="GameDescription">
+			Goop is a rough 3-minute animation, introducing the plot for a forthcoming sequel. It takes place on an alternative version of Earth, where everything is powered by a new source of fuel: goop.
+			<br>
+			<br>
+			This animation was made in the first semester of my second year for the 'Anymation' module; it was a solo project which took a couple of months to create.
+			<br>
+			<br>
+			Feel free to watch the animation below 
+		</div>
+			<br>
+			<object width="870" height="489"> 
+				<param name="Art" value="Goop.swf"> 
+				<embed style="margin-left:15px; margin-top:15px;" src="flashcontent/Goop.swf" width="870" height="489"></embed>  
+			</object>		
+	</div>
+
+	<div id="popUpDiv3" style="display:none;"> <!--Steampunk Tavern-->
+		<a href="#" onclick="popup('popUpDiv3')">
+			<div id="Heading" class="GradientSide RoundTopEdges">
+				<div style="position:absolute; left:50px;"><img src="images/close2.png" /></div>Steampunk Tavern
+				<div id="SubHeading">Low-poly steampunk tavern</div>
+			</div>
+		</a>
+			<br>
+			<div style="margin-left:0px; margin-bottom:0px;">	
+				<iframe style="margin-left:0px;" height="500" width="890" src="steampunktavern.html"  frameborder="0" seamless>
+					<p>Your browser does not support iframes.</p>
+				</iframe>
+				
+			</div>
+		<div class="GameDescription">
+			This Steampunk tavern was made for my low-poly 3D modelling module in second year. The whole map is made to be very efficient, with a single 512x512 png UVW map shared between every object.
+			<br>
+			<br>
+			Feel free to try it below: Use arrow keys to walk, shift to run, space bar to jump
+		</div>
+		<br>
+		<object id="UnityObject" classid="clsid:444785F1-DE89-4295-863A-D46C3A781394"
+				width="800" height="500"
+				codebase="http://webplayer.unity3d.com/download_webplayer/UnityWebPlayer.cab#version=2,0,0,0">
+				<param name="unitycontent/SteampunkTavern.unity3d " value="SteampunkTavern.unity3d" />
+				<embed style="margin-left:50px; margin-top:15px;" id="UnityEmbed" src="unitycontent/SteampunkTavern.unity3d" width="800" height="500"
+				type="application/vnd.unity" pluginspage="http://www.unity3d.com/unity-web-player-2.x" />
+		</object>
+	</div>
+
+	<div id="popUpDiv4" style="display:none;"> <!--cs_italy-->
+		<a href="#" onclick="popup('popUpDiv4')">
+			<div id="Heading" class="GradientSide RoundTopEdges">
+				<div style="position:absolute; left:50px;"><img src="images/close2.png" /></div>Italy
+				<div id="SubHeading">UDK map based loosely off cs_italy</div>
+			</div>
+		</a>
+			<br>
+			<div style="margin-left:0px; margin-bottom:10px;">	
+				<iframe style="margin-left:0px;" height="500" width="890" src="italy.html"  frameborder="0" seamless>
+					<p>Your browser does not support iframes.</p>
+				</iframe>
+				
+			</div>
+		<div class="GameDescription">
+			This is a piece I did for a 3D modelling module in my second year. It was based off the Counter-Strike map 'cs_italy', and was created using a mixture of photographs I took on my holiday to Spain and copyright free images.
+		</div>	
+	</div>
+	
+	<div id="popUpDiv5" style="display:none;"> <!--Attack on Atlantis-->
+		<a href="#" onclick="popup('popUpDiv5')">
+			<div id="Heading" class="GradientSide RoundTopEdges">
+				<div style="position:absolute; left:50px;"><img src="images/close2.png" /></div>Attack On Atlantis
+				<div id="SubHeading">Steampunk rail-shooter</div>
+			</div>
+		</a>
+			<div class="GameDescription">
+				
+					<iframe style="margin-left:-10px;" height="500" width="890" src="attackonatlantis.html"  frameborder="0" seamless>
+					  <p>Your browser does not support iframes.</p>
+					</iframe>
+			</div>
+			<div class="GameDescription">
+				Attack on Atlantis is an underwater rail-shooter where the player is tasked with destroying the great city of Atlantis. It has a Steampunk theme and features cartoony aesthetics. The game was made during my 3rd year at university, where
+				I was the lead artist and created all of the art assets (excluding the whale and the explosions, which were sourced online).
+				</br></br>Feel free to try the game below: Use the mouse to move your ship and hold/tap Left Mouse to shoot
+			</div>
+			<object id="UnityObject" classid="clsid:444785F1-DE89-4295-863A-D46C3A781394"
+				width="800" height="500"
+				codebase="http://webplayer.unity3d.com/download_webplayer/UnityWebPlayer.cab#version=2,0,0,0">
+				<param name="unitycontent/Webplayer Build.unity3d " value="Webplayer Build.unity3d" />
+				<embed style="margin-left:50px; margin-top:15px;" id="UnityEmbed" src="unitycontent/Webplayer Build.unity3d" width="800" height="500"
+				type="application/vnd.unity" pluginspage="http://www.unity3d.com/unity-web-player-2.x" />
+			</object>
+	</div>
+
+	<div id="popUpDiv6" style="display:none;"> <!--Kojo's Adventure-->
+		<a href="#" onclick="popup('popUpDiv6')">
+			<div id="Heading" class="GradientSide RoundTopEdges">
+				<div style="position:absolute; left:50px;"><img src="images/close2.png" /></div>Kojo's Adventure
+				<div id="SubHeading">Story-driven mini-game collection</div>
+			</div>	
+		</a>
+			<div style="margin-left:0px; margin-bottom:25px;">
+			
+					<iframe style="margin-left:0px;" height="500" width="890" src="kojo.html"  frameborder="0" seamless>
+					  <p>Your browser does not support iframes.</p>
+					</iframe>
+				
+			</div>
+			<div class="GameDescription">
+				Kojo's Adventure is a story-driven minigame collection aimed at young children. It was a commission from the Ipswich Museum, and is themed around their 'Unlocked Collection'. 
+				All of the art you see is done by me, whilst the coding was done by Sean Edwick.
+				</br></br>Feel free to click the game below to try: Arrow keys = Joystick, 'Q' = Green, 'W' = Blue, 'E' = Red.
+				</br></br>
+			</div>
+			<object width="640" height="480"> 
+				<param name="Game" value="Kojo (5).swf"> 
+				<embed style="margin-left:130px; margin-top:15px;" src="flashcontent/Kojo (5).swf" width="640" height="480"></embed>  
+			</object>			
+
+	</div>
+				
+</footer>
+
+
+	
+</html>

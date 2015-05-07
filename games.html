@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/lightbox-2.6.min.js"></script>
+<link href="css/lightbox.css" rel="stylesheet" />
+<link rel="stylesheet" href="css.css" type="text/css">
+<script type="text/javascript" src="main.js"></script>
+<link rel="stylesheet" href="lightbox.css" type="text/css" media="screen" />
+<script src="js/prototype.js" type="text/javascript"></script>
+<script src="js/scriptaculous.js?load=effects,builder" type="text/javascript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<script type="text/javascript">
+<!--
+var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+if (document.location.protocol == 'https:')
+	unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+	document.write('<script type="text/javascript" src="' + unityObjectUrl + '"></script>');
+-->
+var u = new UnityObject2();
+u.initPlugin(jQuery("#UnityContainer")[0], "unitycontent/AttackOnAtlantis.unity3d");
+</script>
+
+<title>Dominic Noble Portfolio</title>
+<style>
+ table, th, td
+ {
+ border-collapse:collapse;
+ }
+ th, td
+ {
+ padding:15px;
+ }
+</style>
+</head>
+<header>
+
+	<div id="HeadingContainer" class="HeadingGradient"> <!--Header Buttons-->
+		<div id="ButtonContainer">
+			<li style="list-style-type:none; cursor: pointer; cursor: hand; width:0px;">
+				<a href="index.html"> 
+				<div class="Button">
+				<div style="margin-top:7px;"> Home </div>
+				</div>
+				</a>
+			</li>
+			<li style="list-style-type:none; cursor: pointer; cursor: hand; width:0px;">
+				<a href="games.html"> 
+				<div class="Button" style="margin-top:-50px; margin-left:150px;"> 
+				<div style="margin-top:7px;"> Games </div>
+				</div>
+				</a>
+			</li>
+			<li style="list-style-type:none; cursor: pointer; cursor: hand; width:0px;">
+				<a href="art.html"> 
+				<div class="Button" style="margin-top:-50px; margin-left:300px;"> 
+				<div style="margin-top:7px;"> Art </div>
+				</div>
+				</a>
+			</li>
+			<li style="list-style-type:none; cursor: pointer; cursor: hand; width:0px;">
+				<a href="about.html"> 
+				<div class="Button" style="margin-top:-50px; margin-left:450px;">
+				<div style="margin-top:7px;"> About </div>
+				</div>
+				</a>
+			</li>
+			<li style="list-style-type:none; cursor: pointer; cursor: hand; width:0px;">
+				<a href="contact.html"> 
+				<div class="Button" style="margin-top:-50px; margin-left:600px;">
+				<div style="margin-top:7px;"> Contact </div>
+				</div>
+				</a>
+			</li>
+		</div>
+	</div>
+		
+	<div id="TopImageContainer" class="css-carousel"> <!--Contains the background graphic-->
+		<img class="css-img" src="images/topimage1.jpg" />
+		<img class="css-img" src="images/topimage2.jpg" />
+		<img class="css-img" src="images/topimage3.jpg" />
+		<img class="css-img" src="images/topimage1.jpg" />
+		<img class="css-img" src="images/topimage2.jpg" />
+		<img class="css-img" src="images/topimage3.jpg" />
+	</div>
+		
+</header>
+
+<body onload="Timer()">
+
+	<div id="BodyContainer" class="RoundEdges Shadow"> <!--Main content box-->
+		<div id="Heading" class="GradientSide RoundTopEdges">
+			Games
+			<div id="SubHeading">Some of the games that I've made over my 3 year degree</div>
+		</div>
+		
+		<div id="GridContainer2">
+				<table style="height:30px;">
+					<tr style="">
+						<td> <a href="#" onclick="popup('popUpDiv')"><img src="images/games/AtlantisGame.jpg" class="RoundEdges" alt="Kojo's Adventure"></a></td>
+						<td> <a href="#" onclick="popup('popUpDiv2')"><img src="images/games/KojoGame.jpg" class="RoundEdges" alt="Goop"></a></td>
+						<td> <a href="#" onclick="popup('popUpDiv3')"><img src="images/games/CuteFactory.jpg" class="RoundEdges" alt="Game Jam 2013"></a></td>
+					<tr style="">
+						<td> <a href="#" onclick="popup('popUpDiv6')"><img src="images/games/MinigunMadness.jpg" class="RoundEdges" alt="UDK FPS"></a></td>
+					</tr>
+					<tr style="height:0px">
+					  <td></td>
+					  <td></td>		
+					  <td></td>
+					</tr>
+				</table>
+		</div>
+	</div>
+</body>
+
+<footer>
+	<div id="blanket" style="display:none;"></div>
+	<div id="popUpDiv" style="display:none;"> <!--Attack on Atlantis-->
+		<a href="#" onclick="popup('popUpDiv')">
+			<div id="Heading" class="GradientSide RoundTopEdges">
+				<div style="position:absolute; left:50px;"><img src="images/close2.png" /></div>Attack On Atlantis
+				<div id="SubHeading">Steampunk rail-shooter</div>
+			</div>
+		</a>
+			<div class="GameDescription">
+				
+					<iframe style="margin-left:-10px;" height="500" width="890" src="attackonatlantis.html"  frameborder="0" seamless>
+					  <p>Your browser does not support iframes.</p>
+					</iframe>
+			</div>
+			<div class="GameDescription">
+				Attack on Atlantis is an underwater rail-shooter where the player is tasked with destroying the great city of Atlantis. It has a Steampunk theme and features cartoony aesthetics. The game was made during my 3rd year at university, where
+				I was the lead artist and created all of the art assets (excluding the whale and the explosions, which were sourced online).
+				</br></br>Feel free to try the game below: Use the mouse to move your ship and hold/tap Left Mouse to shoot
+			</div>
+			<object id="UnityObject" classid="clsid:444785F1-DE89-4295-863A-D46C3A781394"
+				width="800" height="500"
+				codebase="http://webplayer.unity3d.com/download_webplayer/UnityWebPlayer.cab#version=2,0,0,0">
+				<param name="unitycontent/Webplayer Build.unity3d " value="Webplayer Build.unity3d" />
+				<embed style="margin-left:50px; margin-top:15px;" id="UnityEmbed" src="unitycontent/Webplayer Build.unity3d" width="800" height="500"
+				type="application/vnd.unity" pluginspage="http://www.unity3d.com/unity-web-player-2.x" />
+			</object>
+		
+	</div>
+
+	<div id="popUpDiv2" style="display:none;"> <!--Kojo's Adventure-->
+		<a href="#" onclick="popup('popUpDiv2')">
+			<div id="Heading" class="GradientSide RoundTopEdges">
+				<div style="position:absolute; left:50px;"><img src="images/close2.png" /></div>Kojo's Adventure
+				<div id="SubHeading">Story-driven mini-game collection</div>
+			</div>	
+		</a>
+			<div style="margin-left:0px; margin-bottom:25px;">
+			
+					<iframe style="margin-left:0px;" height="500" width="890" src="kojo.html"  frameborder="0" seamless>
+					  <p>Your browser does not support iframes.</p>
+					</iframe>
+				
+			</div>
+			<div class="GameDescription">
+				Kojo's Adventure is a story-driven minigame collection aimed at young children. It was a commission from the Ipswich Museum, and is themed around their 'Unlocked Collection'. 
+				All of the art you see is done by me, whilst the coding was done by Sean Edwick.
+				</br></br>Feel free to click the game below to try: Arrow keys = Joystick, 'Q' = Green, 'W' = Blue, 'E' = Red.
+				</br></br>
+			</div>
+			<object width="640" height="480"> 
+				<param name="Game" value="Kojo (5).swf"> 
+				<embed style="margin-left:130px; margin-top:15px;" src="flashcontent/Kojo (5).swf" width="640" height="480"></embed>  
+			</object>			
+
+	</div>
+
+	<div id="popUpDiv3" style="display:none;"> <!--Cute Factory Explosion-->
+		<a href="#" onclick="popup('popUpDiv3')">
+			<div id="Heading" class="GradientSide RoundTopEdges">
+				<div style="position:absolute; left:50px;"><img src="images/close2.png" /></div>Cute Factory Explosion
+				<div id="SubHeading">Top-down taxi game</div>
+			</div>
+			</a>
+			<div style="margin-left:30px;">
+			
+			<div style="margin-left:0px; margin-bottom:25px;">
+			
+					<iframe style="margin-left:-25px;" height="500" width="890" src="cutefactory.html"  frameborder="0" seamless>
+					  <p>Your browser does not support iframes.</p>
+					</iframe>
+				
+			</div>
+			</div>
+			<div class="GameDescription">
+				Cute Factory Explosion is a 2D taxi game in which you must gather all of the stuffed animals which have been scattered around the town after the Cute Factory exploded. 
+				The game was made in 2 weeks for one of our 2nd year modules. All of the art is by me and the code is by a seperate coder.
+				</br></br>Feel free to try the game below: Use the arrow keys to move your car
+			</div>			
+			<object width="640" height="480"> 
+				<param name="Game" value="CuteFactory.swf"> 
+				<embed style="margin-left:130px; margin-top:15px;" src="flashcontent/CuteFactory.swf" width="640" height="480"></embed>  
+			</object>			
+	</div>
+
+	<div id="popUpDiv6" style="display:none;"> <!--Minigun Madness-->
+		<a href="#" onclick="popup('popUpDiv6')">
+			<div id="Heading" class="GradientSide RoundTopEdges">
+				<div style="position:absolute; left:50px;"><img src="images/close2.png" /></div>Minigun Madness
+				<div id="SubHeading">Side-scrolling helicopter game</div>
+			</div>
+		</a>
+			<div style="margin-left:30px;">
+			<div style="margin-left:0px; margin-bottom:25px;">
+				</br>
+					<iframe style="margin-left:-25px;" height="500" width="890" src="minigunmadness.html"  frameborder="0" seamless>
+					  <p>Your browser does not support iframes.</p>
+					</iframe>
+				
+			</div>
+			</div>
+			<div class="GameDescription">
+				Minigun Madness was made during my first year of university, it's also the first game I tried to code myself, so everything you see was made by me.
+				</br>
+				</br>
+				Feel free to try the game below: Use the arrow keys to move
+			</div>	
+			<object width="870" height="489"> 
+				<param name="Game" value="MinigunMadness.swf"> 
+				<embed style="margin-left:15px; margin-top:15px;" src="flashcontent/MinigunMadness.swf" width="870" height="489"></embed>  
+			</object>	
+		</a>
+	</div>
+	
+</footer>
+
+</html>

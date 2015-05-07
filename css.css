@@ -1,0 +1,379 @@
+img {border:0px;}
+
+#HeadingContainer { 
+	width:100%;
+	height:50px;
+}
+.HeadingGradient {
+	background: -webkit-radial-gradient(#81d0ff, #3da8e7); /* For Safari */
+	background: -o-radial-gradient(#81d0ff, #3da8e7); /* For Opera 11.1 to 12.0 */
+	background: -moz-liner-gradient(#81d0ff, #3da8e7); /* For Firefox 3.6 to 15 */
+	background: radial-gradient(#81d0ff, #3da8e7); /* Standard syntax */
+}
+#ButtonContainer {
+	width:750px;  /*This value needs increasing/decreasing by 150 as buttons are added or removed */
+	margin-left:auto;
+	margin-right:auto;
+}
+.Button {  /* Top Buttons */
+	text-align: center;
+	color:#FFFFFF;	 /* Controls Button text colour */
+	width:150px; 
+	height:50px; 
+	font-family: 'Share Tech', sans-serif;
+	font-size:30px;
+	float:left;
+}
+li .Button {
+	color:#FFFFFF; 
+}
+li:hover .Button {
+	background-color:#3da8e7;
+	-moz-box-shadow:    inset 0 0 15px #2c80b2;
+    -webkit-box-shadow: inset 0 0 15px #2c80b2;
+	box-shadow:         inset 0 0 15px #2c80b2;
+}
+#TopImageContainer{
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	height:370px;
+	/*background-image:url('images/topimage1.jpg'); */
+	background-repeat:no-repeat;
+	background-position:center;
+	z-index:-1;
+	animation:BackgroundChange 20s infinite; 
+	-webkit-animation:BackgroundChange 20s infinite;
+}	
+body {
+	background-color: #ceedff;  /* Background colour */
+	margin:0;
+	padding:0;
+	}
+#BodyContainer{
+	margin-top:-150px;
+	margin-left:auto;
+	margin-right:auto;
+	width:900px;
+	background-color:#f9fdff;
+}
+.RoundEdges {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.Shadow { 
+	-moz-box-shadow:    1px 1px 15px 1px #767676; /*Controls body Container Shadow */
+	-webkit-box-shadow: 1px 1px 15px 1px #767676; 
+	box-shadow:         1px 1px 15px 1px #767676; 
+}
+#Heading {
+	margin-right:auto;
+	margin-left:auto;
+	width:900px; 
+	height:75px; 
+	overflow:hidden;
+	color:#3da8e7; /* Controls Header font colour */
+	font-size:50px; /* Controls Header font size */
+	font-family: 'Share Tech', sans-serif;  /* Controls Header font type */
+	text-align:center; /* Centres Header */
+}
+.RoundTopEdges {
+    -webkit-border-top-right-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.GradientSide {	
+	background: -webkit-linear-gradient(#ceedff, #9edcff); /* For Safari */
+	background: -o-linear-gradient(#ceedff, #9edcff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#ceedff, #9edcff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#ceedff, #9edcff); /* Standard syntax */
+}
+#SubHeading
+{
+	margin-top:-10px;
+	margin-left:auto; 
+	margin-right:auto;
+	width:500px;	
+	color:#3da8e7;  /* Controls SubHeader font colour */
+	font-size:20px; /* Controls SubHeader font size */
+	font-family:Calibri;  /* Controls SubHeader font type */	
+}
+#MainContentContainer{
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	width:830px;
+	height:480px;
+}
+#GridContainer{
+	margin-top:10px;
+	margin-left:15px;
+	margin-right:15px;
+	width:900px;
+	padding-bottom:15px;
+}
+#GridContainer2{
+	margin-top:10px;
+	margin-left:15px;
+	margin-right:15px;
+	width:900px;
+	padding-bottom:0px;
+}
+#MainContentPictureContainer {
+	margin-top:0px;
+	margin-left:0px;
+	float:left;	
+}
+#MainContentTextContainer {
+	margin-left:35px;
+	width:490px;
+	float:left;
+	color:#727272;  /* Controls MainContentText font colour */
+	font-size:20px; /* Controls MainContentText font size */
+	font-family:Calibri;  /* Controls MainContentText font type */
+}
+a:link {
+	color:#4f4f4f; /* main site links colour */
+	text-decoration:none;
+}
+.InnerShadow {
+   -moz-box-shadow:    inset 0 0 5px #3e3e3e; /*  for firefox 3.6+ */
+   -webkit-box-shadow: inset 0 0 5px #3e3e3e; /* for webkit browsers */
+   box-shadow:         inset 0 0 5px #3e3e3e; /* for IE */
+}
+.Unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+h1 {
+	text-align: center;
+	color:#3da8e7;
+	font-family: Estrangelo Edessa;
+	font-size:65px;
+	font-variant: small-caps;
+	display: block;
+	margin: 5% auto 5%;
+}
+#blanket {
+   background-color:#111;
+   opacity: 0.65;
+   position:absolute;
+   z-index: 9001; /**/
+   top:0px;
+   left:0px;
+   width:100%;
+   
+}
+#popUpDiv {
+	position:absolute;
+	margin-top:-535px;
+	margin-left:-300px;
+	width:900px;
+	height:1400px;
+	background-color:#f9fdff;
+	z-index: 9002; /**/
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+#popUpDiv2 {
+	position:absolute;
+	margin-top:-535px;
+	margin-left:-300px;
+	width:900px;
+	height:1400px;
+	background-color:#f9fdff;
+	z-index: 9002; /**/
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+#popUpDiv3 {
+	position:absolute;
+	margin-top:-535px;
+	margin-left:-300px;
+	width:900px;
+	height:1400px;
+	background-color:#f9fdff;
+	z-index: 9002; /**/
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+#popUpDiv4 {
+	position:absolute;
+	margin-top:-535px;
+	margin-left:-300px;
+	width:900px;
+	height:1400px;
+	background-color:#f9fdff;
+	z-index: 9002; /**/
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+#popUpDiv5 {
+	position:absolute;
+	margin-top:-535px;
+	margin-left:-300px;
+	width:900px;
+	height:1400px;
+	background-color:#f9fdff;
+	z-index: 9002; /**/
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+#popUpDiv6 {
+	position:absolute;
+	margin-top:-535px;
+	margin-left:-300px;
+	width:900px;
+	height:1400px;
+	background-color:#f9fdff;
+	z-index: 9002; /**/
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.GameDescription {
+padding-left:15px;
+padding-right:15px;
+padding-top:15px;
+font-size:20px;
+font-family:Calibri;
+}
+.css-carousel {
+	width: 100%;
+	height:350px; /* Height of images */
+	position: relative;
+	overflow: hidden;
+}
+.css-carousel .css-img {
+	max-width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-animation: css-carousel-fade 30s linear infinite;
+	-moz-animation: css-carousel-fade 30s linear infinite;
+	-ms-animation: css-carousel-fade 30s linear infinite;
+	animation: css-carousel-fade 30s linear infinite;
+}
+.css-carousel .css-img:nth-child(2) {
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	animation-delay: 5s;
+}
+.css-carousel .css-img:nth-child(3) {
+	-webkit-animation-delay: 10s;
+	-moz-animation-delay: 10s;
+	-ms-animation-delay: 10s;
+	animation-delay: 10s;
+}
+.css-carousel .css-img:nth-child(4) {
+	-webkit-animation-delay: 15s;
+	-moz-animation-delay: 15s;
+	-ms-animation-delay: 15s;
+	animation-delay: 15s;
+}
+.css-carousel .css-img:nth-child(5) {
+	-webkit-animation-delay: 20s;
+	-moz-animation-delay: 20s;
+	-ms-animation-delay: 20s;
+	animation-delay: 20s;
+}
+.css-carousel .css-img:nth-child(6) {
+	-webkit-animation-delay: 25s;
+	-moz-animation-delay: 25s;
+	-ms-animation-delay: 25s;
+	animation-delay: 25s;
+}
+@-webkit-keyframes css-carousel-fade {
+    0%, 20%, 100% { opacity: 0; }
+    5%, 15% { opacity: 1;}
+}
+@-moz-keyframes css-carousel-fade {
+    0%, 20%, 100% { opacity: 0; }
+    5%, 15% { opacity: 1;}
+}
+@-ms-keyframes css-carousel-fade {
+    0%, 20%, 100% { opacity: 0; }
+    5%, 15% { opacity: 1;}
+}
+@keyframes css-carousel-fade {
+	0%, 20%, 100% { opacity: 0; }
+	5%, 15% { opacity: 1;}
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 800px;
+  height: 450px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+

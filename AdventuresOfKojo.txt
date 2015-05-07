@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+<object width="640" height="480"> 
+    <param name="Game" value="KojoNew.swf"> 
+    <embed style="margin-left:130px; margin-top:15px;" src="flashcontent/Kojo.swf" width="640" height="480"></embed>  
+   </object>
+</body>
+
+</html>
